@@ -1,0 +1,48 @@
+.orderlist{
+    flex:5;
+    margin: 20px;
+   
+    
+    }
+    .orderlist h1
+    {
+        color: darkblue;
+    
+    }
+    
+    .actionedit
+    {
+        border:5ch;
+        border-radius: 8px;
+        background-color: rgb(73, 216, 73);
+        color: white;
+        margin: 10px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    
+    .actiondelete
+    {
+    color: rgb(219, 40, 40);
+    cursor: pointer;
+    }
+    .statusbutt {
+        padding: 5px 7px;
+        border: none;
+        border-radius: 10px;
+      }
+    .statusbutt.Completed{
+        background-color: #e5faf2;
+        color: #3bb077;
+    }
+    .statusbutt.Cancelled{
+        background-color: #fff0f1;
+        color: #d95087;
+    
+    }
+    .statusbutt.Preparing{
+        background-color: #ebf1fe;
+        color: #2a7ade;
+    
+    }
+    

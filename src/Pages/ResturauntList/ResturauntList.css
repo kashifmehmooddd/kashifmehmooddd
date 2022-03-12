@@ -1,0 +1,54 @@
+.resturauntList{
+    flex:5;
+    margin: 20px;
+   
+    
+}
+    .resturauntList h1
+    {
+        color: darkblue;
+    
+    }
+    
+    .actionedit
+    {
+        border:5ch;
+        border-radius: 8px;
+        background-color: rgb(73, 216, 73);
+        color: white;
+        margin: 10px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    
+    .buttondes {
+
+        width: 100px;
+  border: none;
+  padding: 5px;
+  background-color: darkblue;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+      }
+
+    .actiondelete
+    {
+    color: rgb(219, 40, 40);
+    cursor: pointer;
+    }
+    .resthead
+    {
+        display: flex !important;
+        flex-direction: row !important; 
+        align-content: center;
+
+    }
+    .userTitleContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+     

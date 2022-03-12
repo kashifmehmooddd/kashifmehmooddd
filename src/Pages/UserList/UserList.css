@@ -1,0 +1,29 @@
+.userList{
+    flex:5;
+    margin: 20px;
+   
+    
+    }
+    .userList h1
+    {
+        color: darkblue;
+    
+    }
+    
+    .actionedit
+    {
+        width: 50px;
+        border:5ch;
+        border-radius: 8px;
+        background-color: rgb(73, 216, 73);
+        color: white;
+        margin: 10px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    
+    .actiondelete
+    {
+    color: rgb(219, 40, 40);
+    cursor: pointer;
+    }

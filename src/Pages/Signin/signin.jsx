@@ -17,7 +17,8 @@ export default function SignIn() {
              if(cred.user.emailVerified)
              {
                console.log(cred)
-              //  window.location="/Home";
+               
+               window.location="/Home";
              }
              else{
                alert("Email not verified\ncheck your email to get verified");

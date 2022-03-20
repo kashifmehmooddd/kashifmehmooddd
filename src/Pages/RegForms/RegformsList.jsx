@@ -3,13 +3,16 @@ import { DataGrid } from '@mui/x-data-grid';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { OrdersRows } from "../../dummydata";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { formRef } from "../../firebase/fbconfig";
-import { getDocs } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../firebase/fbconfig";
 
 export default function FormList() {
 
     const [forms,setForms]=useState([]);
+    const [restimgs,setrestimgs]=useState([]);
+    const [dishes,setdishes]=useState([]);
   const handleDelete=(id)=>
   {
     console.log(id);
@@ -17,21 +20,46 @@ export default function FormList() {
     
   };
 
-  let tempform=[];
-     
-  getDocs(formRef).then((snapshot)=>
+  
+  
+
+
+  useEffect(()=>
   {
+    getDocs(formRef).then((snapshot)=>
+  { 
+    let tempform=[];
     snapshot.docs.forEach((doc)=>
     {
       tempform.push({...doc.data(),id:doc.id});
     })
     setForms(tempform)
+    
   }).catch((error)=>
   {
     console.log(error);
-  })
- 
+  });
 
+   
+  getDocs(collection(db,"Forms","11","dishes")).then((snapshot)=>
+  { let tempform=[];
+    snapshot.docs.forEach((doc)=>
+    {
+      tempform.push({...doc.data(),id:doc.id});
+    })
+    setdishes(tempform)
+    
+  }).catch((error)=>
+  {
+    console.log(error);
+  });
+
+   
+
+
+  },[])
+     
+ 
 
   const columns = [
         

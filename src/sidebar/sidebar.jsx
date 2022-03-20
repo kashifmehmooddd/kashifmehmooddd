@@ -13,16 +13,18 @@ import {
   WorkOutline,
   Report, 
 } from "@mui/icons-material";
-import { Link } from "react-router-dom";
+import { Link, useRouteMatch } from "react-router-dom";
 
 export default function Sidebar() {
+  let {url} = useRouteMatch();
+
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList"> 
-          <Link to={`/Home`} className="link">
+          <Link to={`/home`} className="link">
             <li className="sidebarListItem">
               <LineStyle className="sidebarIcon" />
               Home

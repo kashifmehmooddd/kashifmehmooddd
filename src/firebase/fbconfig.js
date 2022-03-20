@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import {getAuth}  from "firebase/auth";
-import {getStorage,ref}  from "firebase/storage";
+import {getStorage,ref,uploadBytesResumable,getDownloadURL}  from "firebase/storage";
 
 import {getFirestore,collection,addDoc,doc,getDoc,deleteDoc,setDoc}  from "firebase/firestore"
 
@@ -33,14 +33,19 @@ export const db=getFirestore(app);
 export const restref=collection(db,'Resturaunts');
 //forms
 export const formRef=collection(db,'Forms');
+//
 
 
 
 
 //add forms
- export  function addForms( Name,Address,Zipcode,State,PName,Pcontact,Remail,Rcontact,Seats,Start,End,Takeaway,Bank)
+ export  function addForms( id, Name,Address,Zipcode,State,PName,Pcontact,Remail,Rcontact,Seats,Start,End,Takeaway,Bank)
  {
-   addDoc(formRef,{
+   //set formreference
+   const setFormRef=doc(db,"Forms",id);
+   
+
+  setDoc(setFormRef,{
 
     name: Name,
     address: Address,
@@ -65,6 +70,53 @@ export const formRef=collection(db,'Forms');
    })
  }
 
+ //set images in forms
+
+ export function setImagesForm(Formid,imagename,imageurl)
+ {
+  //set imageinformreference
+  console.log(imageurl);
+  const setimageformref=doc(db,"Forms",Formid,"Images",imagename);
+  setDoc(setimageformref,
+    {
+      imageUrl: imageurl
+
+    }).then(()=>
+    {
+      console.log("successfully added!");
+    }).catch(err=>
+      {
+        console.log(err.message);
+      });
+
+ }
+
+ //set dishes in form
+
+ export function setDishesforms(Formid,Name,Category,Average,Description,imageurl)
+ {
+       //set formreference
+       const setDishesref=collection(db,"Forms",Formid,"dishes");
+   
+
+   addDoc(setDishesref,{
+ 
+     name:Name,
+     category:Category,
+     averageprice:Average,
+     description:Description,
+     imageUrl:imageurl
+ 
+    }).then(()=>
+    {
+      console.log("added!");
+    }).catch((error)=>
+    {
+      console.log(error.message);
+    })
+
+ }
+
  
 
 
@@ -74,7 +126,7 @@ export function deleteRest(id)
  const restDocRef=doc(db,'Resturaunts',id);
  deleteDoc(restDocRef).then(()=>
  {
-   alert('Sucessfully deleted!');
+   console.log("added!");
  }).catch((error)=>
  {
    console.log(error.message);
@@ -83,15 +135,6 @@ export function deleteRest(id)
 
 //Stroage
 export const storage =getStorage(app);
-
-
-
-
-
-
-
-
-
 
 
 

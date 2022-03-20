@@ -14,46 +14,5 @@ import ViewForm from "./Pages/viewForm/viewForm";
 
 
 export default function Main() {
-  return (
-      
-    <Router>
-    <div className="main">
-         <Topbar/>
-        <div className="container">
-          <Sidebar></Sidebar>
-          <Switch>
-            <Route exact path="/Home"> 
-              <Home/>
-            </Route>
-            <Route  exact path="/userlist"> 
-              <UserList/>
-            </Route>
-            <Route  path="/userlist/:userid"> 
-              <User/>
-            </Route>
-            <Route  exact path="/Resturaunts"> 
-            <ResturauntList/>
-            </Route>
-            <Route exact path="/Resturaunts/:restid"> 
-              <Resturaunt/>
-            </Route>
-            <Route  path="/newRest"> 
-              <NewResturaunt/>
-            </Route>
-            
-            <Route  exact path="/Orders"> 
-            <OrderList/>
-            </Route>
-            <Route  exact path="/Forms"> 
-            <FormList/>
-            </Route>
-            <Route exact path="/Forms/:formsid"> 
-              <ViewForm/>
-            </Route>
-           
-         </Switch>
-        </div>
-    </div>
-    </Router>
-  )
+  
 }

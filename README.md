@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:0f172a,50:164e63,100:0891b2&text=Kashif%20Mehmood&fontColor=ffffff&fontSize=48&fontAlignY=38&desc=Software%20Engineer%20%7C%20Backend%20%26%20Cloud%20%7C%20Manchester%2C%20UK&descAlignY=59&descSize=17&animation=fadeIn" width="100%" alt="Kashif Mehmood banner" />
+<img src="./assets/banner.svg" width="100%" alt="Kashif Mehmood — Software Engineer banner" />
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=1000&color=22D3EE&center=true&vCenter=true&width=760&lines=Building+scalable+APIs+and+production+systems;Python+%7C+Django+%7C+PostgreSQL+%7C+AWS;Cloud+infrastructure+%2B+AI-powered+automation;Turning+complex+requirements+into+reliable+software)](https://git.io/typing-svg)
 
@@ -52,23 +52,6 @@ I enjoy taking ideas from requirements to architecture, deployment, and producti
 | **Veterinary healthcare platform** | AI-assisted OCR extraction and storage of historical patient records, plus production application work. | Django, React, TypeScript, GraphQL, AI/OCR |
 | **Other client platforms** | Contributions across expert marketplaces, wellbeing, music streaming, and convention management software. | Ruby on Rails, Vue.js, React |
 
-## 🧑‍💻 Explore my GitHub
-
-Here are some of my **public repositories**. My main production projects are primarily private/client-owned.
-
-[![Portfolio repo](https://github-readme-stats.vercel.app/api/pin/?username=kashifmehmooddd&repo=Portfolio&theme=tokyonight&hide_border=true)](https://github.com/kashifmehmooddd/Portfolio)
-[![Kaza backend repo](https://github-readme-stats.vercel.app/api/pin/?username=kashifmehmooddd&repo=kaza-backend&theme=tokyonight&hide_border=true)](https://github.com/kashifmehmooddd/kaza-backend)
-
-<details>
-<summary>More public repositories</summary>
-
-- [MernProject](https://github.com/kashifmehmooddd/MernProject)
-- [Crazubuds-django-](https://github.com/kashifmehmooddd/Crazubuds-django-)
-- [microservice-demo](https://github.com/kashifmehmooddd/microservice-demo)
-- [econest-cloud-functions](https://github.com/kashifmehmooddd/econest-cloud-functions)
-
-</details>
-
 ## 📈 GitHub activity
 
 <div align="center">
@@ -96,6 +79,6 @@ Here are some of my **public repositories**. My main production projects are pri
 
 [**View portfolio**](https://kashifmehmooddd.github.io/Portfolio/#/about) · [**Connect on LinkedIn**](https://www.linkedin.com/in/kashifmehmooddd/) · [**Email me**](mailto:work.kashifmehmood@gmail.com)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:0f172a,50:164e63,100:0891b2" width="100%" alt="Decorative footer" />
+
 
 </div>
